@@ -14,6 +14,16 @@ public class SinglyLinkedList
 		}
 		
 	}
+	public void display() {
+		ListNode current= head;
+		while(current!=null)
+		{
+			System.out.println(current.data+ "-->");
+			current=current.next;
+		}
+		System.out.println("null");
+		
+	}
 	
 	
 	
@@ -28,6 +38,7 @@ public class SinglyLinkedList
 		sli.head.next=second;
 		second.next=third;
 		third.next=fourth;
+		sli.display();
 		
 	}
 	
